@@ -30,7 +30,7 @@ module.exports = [
       "react/jsx-no-target-blank": ["error", { allowReferrer: true }],
 
       // deprecated mui/styled in our frontend code in favor of tss-react/mui
-      "@foxglove/no-restricted-imports": [
+      "@flora-suite/no-restricted-imports": [
         "error",
         {
           name: "@mui/material",

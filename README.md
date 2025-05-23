@@ -1,8 +1,8 @@
-# @foxglove/eslint-plugin
+# @flora-suite/eslint-plugin
 
-[![npm package](https://img.shields.io/npm/v/@foxglove/eslint-plugin)](https://www.npmjs.com/package/@foxglove/eslint-plugin)
+[![npm package](https://img.shields.io/npm/v/@flora-suite/eslint-plugin)](https://www.npmjs.com/package/@flora-suite/eslint-plugin)
 
-Foxglove default eslint configuration & rules.
+Flora Suite default eslint configuration & rules.
 
 ## Rules
 
@@ -12,7 +12,7 @@ See [rules/README.md](rules/README.md) for details on each rule.
 
 ```sh
 yarn add -D \
-    @foxglove/eslint-plugin \
+    @flora-suite/eslint-plugin \
     typescript-eslint \
     eslint \
     prettier
@@ -21,20 +21,20 @@ yarn add -D \
 In your `eslint.config.cjs`:
 
 ```js
-const foxglove = require("@foxglove/eslint-plugin");
+const flora = require("@flora-suite/eslint-plugin");
 const tseslint = require("typescript-eslint");
 
 module.exports = tseslint.config(
-  ...foxglove.configs.base,
-  ...foxglove.configs.react,
-  ...foxglove.configs.jest,
-  ...foxglove.configs.typescript
+  ...flora.configs.base,
+  ...flora.configs.react,
+  ...flora.configs.jest,
+  ...flora.configs.typescript
 );
 ```
 
 ## License
 
-@foxglove/eslint-plugin is released under the [MIT License](/LICENSE.md).
+@flora-suite/eslint-plugin is released under the [MIT License](/LICENSE.md).
 
 ## Releasing
 
@@ -47,4 +47,4 @@ git push && git push origin "$tag"
 
 ## Stay in touch
 
-Join our [Slack channel](https://foxglove.dev/slack) to ask questions, share feedback, and stay up to date on what our team is working on.
+Join our [Slack channel](https://flora.fan) to ask questions, share feedback, and stay up to date on what our team is working on.

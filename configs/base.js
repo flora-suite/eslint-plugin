@@ -8,7 +8,7 @@ const filenames = require("eslint-plugin-filenames");
 const importPlugin = require("eslint-plugin-import");
 const eslintPluginPrettierRecommended = require("eslint-plugin-prettier/recommended");
 
-const foxglove = require("../plugin");
+const floraSuite = require("../plugin");
 
 const fixedFilenames = fixupPluginRules(filenames);
 
@@ -21,7 +21,7 @@ module.exports = [
       reportUnusedDisableDirectives: "error",
     },
     plugins: {
-      "@foxglove": foxglove,
+      "@flora-suite": floraSuite,
       import: importPlugin,
       es: fixupPluginRules(es),
 
@@ -74,10 +74,10 @@ module.exports = [
       "filenames/match-exported": "error",
 
       // require double equal for null and undefined, triple equal everywhere else
-      "@foxglove/strict-equality": "error",
-      "@foxglove/no-never-initialized-let": "error",
-      "@foxglove/no-return-promise-resolve": "error",
-      "@foxglove/prefer-hash-private": "error",
+      "@flora-suite/strict-equality": "error",
+      "@flora-suite/no-never-initialized-let": "error",
+      "@flora-suite/no-return-promise-resolve": "error",
+      "@flora-suite/prefer-hash-private": "error",
 
       // require curly braces everywhere
       curly: "error",

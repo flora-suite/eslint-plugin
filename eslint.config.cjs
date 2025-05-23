@@ -1,4 +1,4 @@
-const foxglove = require("@foxglove/eslint-plugin");
+const floraSuite = require("@flora-suite/eslint-plugin");
 const globals = require("globals");
 const tseslint = require("typescript-eslint");
 
@@ -6,7 +6,7 @@ module.exports = tseslint.config(
   {
     ignores: ["dist"],
   },
-  ...foxglove.configs.base,
+  ...floraSuite.configs.base,
   {
     languageOptions: {
       globals: {
@@ -17,15 +17,15 @@ module.exports = tseslint.config(
       },
     },
   },
-  ...foxglove.configs.typescript.map((config) => ({
+  ...floraSuite.configs.typescript.map((config) => ({
     ...config,
     files: ["**/*.@(ts|tsx)"],
   })),
-  ...foxglove.configs.react.map((config) => ({
+  ...floraSuite.configs.react.map((config) => ({
     ...config,
     files: ["**/*.@(jsx|tsx)"],
   })),
-  ...foxglove.configs.jest.map((config) => ({
+  ...floraSuite.configs.jest.map((config) => ({
     ...config,
     files: ["**/*.test.@(js|jsx|ts|tsx)"],
   }))

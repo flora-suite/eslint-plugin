@@ -5,7 +5,7 @@
 function isNullLiteral(node) {
   return (
     node.type === "Literal" &&
-    // eslint-disable-next-line @foxglove/strict-equality
+    // eslint-disable-next-line @flora-suite/strict-equality
     node.value === null &&
     !(/** @type {Partial<import("estree").RegExpLiteral>} */ (node).regex) &&
     !(/** @type {Partial<import("estree").BigIntLiteral>} */ (node).bigint)
