@@ -1,6 +1,6 @@
 // -*- jsonc -*-
 {
-  "extends": "@foxglove/tsconfig/base",
+  "extends": "@flora-suite/tsconfig/base",
   "compilerOptions": {
     "lib": ["es2022", "dom"],
     "noEmit": true

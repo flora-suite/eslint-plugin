@@ -1,6 +1,6 @@
 // -*- jsonc -*-
 {
-  "extends": "@foxglove/tsconfig/base",
+  "extends": "@flora-suite/tsconfig/base",
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,

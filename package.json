@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@flora-suite/eslint-plugin": "file:.",
-    "@foxglove/tsconfig": "2.0.0",
+    "@flora-suite/tsconfig": "1.0.0",
     "@swc/core": "1.11.29",
     "@swc/jest": "0.2.38",
     "@types/eslint__js": "8.42.3",
