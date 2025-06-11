@@ -3,7 +3,7 @@
   "extends": "@flora-suite/tsconfig/base",
   "compilerOptions": {
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     "outDir": "dist",
     "lib": ["es2022", "dom"],
     "jsx": "preserve",
